@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieDetalViewController: UIViewController {
+class MovieDetailViewController: UIViewController {
 
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var movieTitleLabel: UILabel!
@@ -17,6 +17,7 @@ class MovieDetalViewController: UIViewController {
     @IBOutlet weak var openingCrawLabel: UILabel!
     @IBOutlet weak var createdLabel: UILabel!
     @IBOutlet weak var editedLabel: UILabel!
+    @IBOutlet weak var viewTitleLabel: UILabel!
     
     var movieVM : MovieViewModel?
     
@@ -43,10 +44,13 @@ class MovieDetalViewController: UIViewController {
         openingCrawLabel.text = movie.openingCrawl
         createdLabel.text = movie.created
         editedLabel.text = movie.edited
-        self.title = movie.title
+        self.viewTitleLabel.text = movie.title
         
     }
    
-  
+    @IBAction func backTapped(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
 
 }

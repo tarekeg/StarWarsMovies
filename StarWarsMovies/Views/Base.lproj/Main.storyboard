@@ -74,7 +74,7 @@
                         <outlet property="tableView" destination="O26-jh-BdP" id="URC-lk-FxB"/>
                         <outlet property="topView" destination="qxL-81-72R" id="tca-IQ-Ll1"/>
                         <outlet property="totalMoviesLabel" destination="C3b-Nh-NMT" id="sk3-fL-0lf"/>
-                        <segue destination="yEu-n4-SAX" kind="show" identifier="toDetails" id="FTn-hR-ks0"/>
+                        <segue destination="yEu-n4-SAX" kind="presentation" identifier="toDetails" id="jku-xu-BbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDg-7p-KdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -84,13 +84,41 @@
         <!--A New Hope-->
         <scene sceneID="0HR-Cc-aWo">
             <objects>
-                <viewController id="yEu-n4-SAX" customClass="MovieDetalViewController" customModule="StarWarsMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yEu-n4-SAX" customClass="MovieDetailViewController" customModule="StarWarsMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lba-lV-Glw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-1S-bAn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtr-Jp-hI7">
+                                        <rect key="frame" x="0.0" y="9.5" width="69" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="yEu-n4-SAX" eventType="touchUpInside" id="iDQ-m8-fWr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIS-CD-cgW">
+                                        <rect key="frame" x="207" y="25" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="18"/>
+                                        <color key="textColor" name="SecondaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qtr-Jp-hI7" secondAttribute="trailing" constant="20" symbolic="YES" id="BBx-bo-fR0"/>
+                                    <constraint firstItem="qtr-Jp-hI7" firstAttribute="centerY" secondItem="Eze-1S-bAn" secondAttribute="centerY" id="IU7-cq-RTe"/>
+                                    <constraint firstItem="xIS-CD-cgW" firstAttribute="centerY" secondItem="Eze-1S-bAn" secondAttribute="centerY" id="UpV-ya-KdG"/>
+                                    <constraint firstItem="xIS-CD-cgW" firstAttribute="centerX" secondItem="Eze-1S-bAn" secondAttribute="centerX" id="bYs-VB-h92"/>
+                                    <constraint firstItem="qtr-Jp-hI7" firstAttribute="leading" secondItem="Eze-1S-bAn" secondAttribute="leading" id="j6u-aW-H7t"/>
+                                    <constraint firstAttribute="height" constant="50" id="rsH-J7-bs6"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9k-mt-6iq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="152.5"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="152.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="A New Hope" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-1b-CSc">
                                         <rect key="frame" x="14" y="20" width="199.5" height="39.5"/>
@@ -166,38 +194,38 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Craw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-T0-tKk">
-                                <rect key="frame" x="14" y="260.5" width="82.5" height="15"/>
+                                <rect key="frame" x="14" y="266.5" width="82.5" height="15"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ND-PG-dSz">
-                                <rect key="frame" x="14" y="290.5" width="376" height="137.5"/>
+                                <rect key="frame" x="14" y="296.5" width="376" height="137.5"/>
                                 <string key="text">It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet. Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...</string>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-CQ-mfs">
-                                <rect key="frame" x="14" y="453" width="46.5" height="15"/>
+                                <rect key="frame" x="14" y="459" width="46.5" height="15"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/2/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y54-Kn-BR3">
-                                <rect key="frame" x="14" y="468" width="63" height="16"/>
+                                <rect key="frame" x="14" y="474" width="62.5" height="16"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edited" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3p-X0-NCY">
-                                <rect key="frame" x="99" y="453" width="37.5" height="15"/>
+                                <rect key="frame" x="99" y="459" width="37.5" height="15"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/2/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-it-evW">
-                                <rect key="frame" x="99" y="468" width="63" height="16"/>
+                                <rect key="frame" x="99" y="474" width="62.5" height="16"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
@@ -206,14 +234,16 @@
                         <viewLayoutGuide key="safeArea" id="5Qz-vG-Tcj"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="h9k-mt-6iq" firstAttribute="top" secondItem="Eze-1S-bAn" secondAttribute="bottom" id="0jT-US-r9U"/>
                             <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qIQ-T0-tKk" secondAttribute="trailing" symbolic="YES" id="0lC-si-Po2"/>
                             <constraint firstItem="q3p-X0-NCY" firstAttribute="leading" secondItem="Kav-CQ-mfs" secondAttribute="trailing" constant="38.5" id="1gr-4o-LVB"/>
                             <constraint firstItem="5Qz-vG-Tcj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kav-CQ-mfs" secondAttribute="bottom" constant="40" id="2GY-AW-2XZ"/>
                             <constraint firstItem="Kav-CQ-mfs" firstAttribute="top" secondItem="5ND-PG-dSz" secondAttribute="bottom" constant="25" id="4E6-c0-qpp"/>
                             <constraint firstItem="Zwy-it-evW" firstAttribute="leading" secondItem="q3p-X0-NCY" secondAttribute="leading" id="CNu-OB-gFQ"/>
-                            <constraint firstItem="h9k-mt-6iq" firstAttribute="top" secondItem="5Qz-vG-Tcj" secondAttribute="top" id="I4d-Yz-x8B"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" secondItem="Eze-1S-bAn" secondAttribute="trailing" id="IYJ-WK-IIr"/>
                             <constraint firstItem="5ND-PG-dSz" firstAttribute="top" secondItem="qIQ-T0-tKk" secondAttribute="bottom" constant="15" id="Inl-xQ-RUM"/>
                             <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q3p-X0-NCY" secondAttribute="trailing" symbolic="YES" id="JVJ-Ps-OZW"/>
+                            <constraint firstItem="Eze-1S-bAn" firstAttribute="leading" secondItem="5Qz-vG-Tcj" secondAttribute="leading" id="Lk9-6J-vw0"/>
                             <constraint firstItem="Y54-Kn-BR3" firstAttribute="top" secondItem="Kav-CQ-mfs" secondAttribute="bottom" id="OiW-D9-9k1"/>
                             <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" secondItem="h9k-mt-6iq" secondAttribute="trailing" id="Rfk-3p-tQ7"/>
                             <constraint firstItem="Zwy-it-evW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y54-Kn-BR3" secondAttribute="trailing" constant="8" symbolic="YES" id="SQd-fs-Te6"/>
@@ -224,12 +254,15 @@
                             <constraint firstItem="qIQ-T0-tKk" firstAttribute="top" secondItem="h9k-mt-6iq" secondAttribute="bottom" constant="20" id="hTF-S6-rNh"/>
                             <constraint firstItem="Zwy-it-evW" firstAttribute="top" secondItem="q3p-X0-NCY" secondAttribute="bottom" id="hlv-Oj-h4M"/>
                             <constraint firstItem="qIQ-T0-tKk" firstAttribute="leading" secondItem="5Qz-vG-Tcj" secondAttribute="leading" constant="14" id="iUf-wR-Jca"/>
+                            <constraint firstItem="Eze-1S-bAn" firstAttribute="top" secondItem="5Qz-vG-Tcj" secondAttribute="top" id="pnl-JY-y1k"/>
                             <constraint firstItem="5ND-PG-dSz" firstAttribute="leading" secondItem="qIQ-T0-tKk" secondAttribute="leading" id="r55-W1-cGz"/>
                             <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" secondItem="5ND-PG-dSz" secondAttribute="trailing" constant="24" id="x8c-q1-g8a"/>
                             <constraint firstItem="Y54-Kn-BR3" firstAttribute="leading" secondItem="Kav-CQ-mfs" secondAttribute="leading" id="xS3-u3-3lA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="A New Hope" id="jOS-zd-40r"/>
+                    <navigationItem key="navigationItem" title="A New Hope" id="jOS-zd-40r">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qJq-9y-wcO"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="createdLabel" destination="Y54-Kn-BR3" id="xoM-tm-dCT"/>
                         <outlet property="directorLabel" destination="Fxk-ZO-loq" id="AI8-p9-MUu"/>
@@ -239,11 +272,12 @@
                         <outlet property="producerLabel" destination="LD6-yX-Q1v" id="QuK-ne-pLv"/>
                         <outlet property="releaseDateLabel" destination="7NE-La-41F" id="myf-hZ-2IO"/>
                         <outlet property="topView" destination="h9k-mt-6iq" id="u9e-i8-pWv"/>
+                        <outlet property="viewTitleLabel" destination="xIS-CD-cgW" id="URd-KP-cMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Hp-mN-Uaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="193"/>
+            <point key="canvasLocation" x="1784" y="193"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="97c-Pr-WPm">
@@ -268,6 +302,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="star_wars_logo" width="170" height="170"/>
         <namedColor name="BackgroundColor">
             <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

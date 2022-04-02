@@ -40,7 +40,7 @@
 		F5BA8AAF27F8477C002387FB /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */; };
 		F5BA8AB327F85025002387FB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB227F85025002387FB /* MovieViewModel.swift */; };
 		F5BA8AB527F85706002387FB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB427F85706002387FB /* MovieListViewModel.swift */; };
-		F5BA8AB727F86CD3002387FB /* MovieDetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB627F86CD3002387FB /* MovieDetalViewController.swift */; };
+		F5BA8AB727F86CD3002387FB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB627F86CD3002387FB /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +79,7 @@
 		F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		F5BA8AB227F85025002387FB /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		F5BA8AB427F85706002387FB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
-		F5BA8AB627F86CD3002387FB /* MovieDetalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetalViewController.swift; sourceTree = "<group>"; };
+		F5BA8AB627F86CD3002387FB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				F51418E327F82AEA002F06A1 /* MovieListViewController.swift */,
-				F5BA8AB627F86CD3002387FB /* MovieDetalViewController.swift */,
+				F5BA8AB627F86CD3002387FB /* MovieDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -319,7 +319,7 @@
 				F51418C427F81DAC002F06A1 /* AppDelegate.swift in Sources */,
 				F51418C627F81DAC002F06A1 /* SceneDelegate.swift in Sources */,
 				F51418E427F82AEA002F06A1 /* MovieListViewController.swift in Sources */,
-				F5BA8AB727F86CD3002387FB /* MovieDetalViewController.swift in Sources */,
+				F5BA8AB727F86CD3002387FB /* MovieDetailViewController.swift in Sources */,
 				F51418DA27F8203B002F06A1 /* Movie.swift in Sources */,
 				F5BA8AB527F85706002387FB /* MovieListViewModel.swift in Sources */,
 				F5B1A4C627F8358E00830465 /* MovieTableViewCell.swift in Sources */,

@@ -79,7 +79,7 @@ extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
         if segue.identifier == CONSTANT.SegueIdentifier.toDetails{
             let index = sender as? NSIndexPath
             let movieVM = movieListVM.movieAtIndex(index: index!.row)
-            if let destinationVC =  segue.destination as? MovieDetalViewController {
+            if let destinationVC =  segue.destination as? MovieDetailViewController {
                 destinationVC.movieVM = movieVM
             }
         }
