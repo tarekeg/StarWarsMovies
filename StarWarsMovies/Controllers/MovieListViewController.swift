@@ -71,6 +71,20 @@ extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: CONSTANT.SegueIdentifier.toDetails, sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == CONSTANT.SegueIdentifier.toDetails{
+            let index = sender as? NSIndexPath
+            let movieVM = movieListVM.movieAtIndex(index: index!.row)
+            if let destinationVC =  segue.destination as? MovieDetalViewController {
+                destinationVC.movieVM = movieVM
+            }
+        }
+    }
+    
     
     
     

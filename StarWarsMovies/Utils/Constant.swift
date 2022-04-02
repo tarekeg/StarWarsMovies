@@ -17,4 +17,8 @@ struct CONSTANT {
     struct CELLIdentifier {
         static let movieCell = "MovieTableViewCell"
     }
+    // MARK: Identifier
+    struct SegueIdentifier {
+        static let toDetails = "toDetails"
+    }
 }
