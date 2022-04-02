@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8lx-um-nMh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AgV-uN-TiL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,7 +14,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Movie List View Controller-->
+        <!--Think-it Star Wars-->
         <scene sceneID="RW5-3f-W1S">
             <objects>
                 <viewController id="8lx-um-nMh" customClass="MovieListViewController" customModule="StarWarsMovies" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-81-72R">
-                                <rect key="frame" x="0.0" y="44" width="414" height="224"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="224"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_wars_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RNg-rx-BH3">
                                         <rect key="frame" x="134" y="39" width="146" height="146"/>
@@ -48,7 +49,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="142" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O26-jh-BdP">
-                                <rect key="frame" x="0.0" y="274" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="318" width="414" height="578"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8lx-um-nMh" id="8C2-WB-2GR"/>
@@ -69,13 +70,190 @@
                             <constraint firstItem="O26-jh-BdP" firstAttribute="top" secondItem="qxL-81-72R" secondAttribute="bottom" constant="6" id="fk5-VZ-4Yt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Think-it Star Wars" id="Kin-FT-o0E"/>
                     <connections>
                         <outlet property="tableView" destination="O26-jh-BdP" id="URC-lk-FxB"/>
                         <outlet property="topView" destination="qxL-81-72R" id="tca-IQ-Ll1"/>
                         <outlet property="totalMoviesLabel" destination="C3b-Nh-NMT" id="sk3-fL-0lf"/>
+                        <segue destination="yEu-n4-SAX" kind="show" id="FTn-hR-ks0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDg-7p-KdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776.81159420289862" y="192.85714285714286"/>
+        </scene>
+        <!--A New Hope-->
+        <scene sceneID="0HR-Cc-aWo">
+            <objects>
+                <viewController id="yEu-n4-SAX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lba-lV-Glw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9k-mt-6iq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="152.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="A New Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-1b-CSc">
+                                        <rect key="frame" x="14" y="20" width="199.5" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="36"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-yb-WDB">
+                                        <rect key="frame" x="100" y="98.5" width="32" height="10"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="9"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Georges Lucas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxk-ZO-loq">
+                                        <rect key="frame" x="100" y="108.5" width="88" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="qxk-Tm-T5Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBh-Nb-KgG">
+                                        <rect key="frame" x="204" y="98.5" width="37" height="10"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="9"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Gary Kurtz, Rick McCallum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD6-yX-Q1v">
+                                        <rect key="frame" x="204" y="108.5" width="154.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COu-f8-Sw9">
+                                        <rect key="frame" x="14" y="98.5" width="54" height="10"/>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="9"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1977/05/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NE-La-41F">
+                                        <rect key="frame" x="14" y="108.5" width="66" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="B4L-nI-st4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="SecondaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="LD6-yX-Q1v" firstAttribute="top" secondItem="eBh-Nb-KgG" secondAttribute="bottom" id="0Hl-bU-5OD"/>
+                                    <constraint firstItem="LD6-yX-Q1v" firstAttribute="leading" secondItem="Fxk-ZO-loq" secondAttribute="trailing" constant="16" id="2IV-en-blu"/>
+                                    <constraint firstItem="Fxk-ZO-loq" firstAttribute="top" secondItem="OeO-yb-WDB" secondAttribute="bottom" id="82X-R7-Jw8"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LD6-yX-Q1v" secondAttribute="trailing" constant="10" id="8TJ-V0-5vW"/>
+                                    <constraint firstItem="eBh-Nb-KgG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OeO-yb-WDB" secondAttribute="trailing" constant="8" symbolic="YES" id="DEf-UM-cGs"/>
+                                    <constraint firstItem="7NE-La-41F" firstAttribute="top" secondItem="COu-f8-Sw9" secondAttribute="bottom" id="FM1-bL-KJ2"/>
+                                    <constraint firstItem="Fxk-ZO-loq" firstAttribute="leading" secondItem="OeO-yb-WDB" secondAttribute="leading" id="FbX-Pn-83q"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VYY-1b-CSc" secondAttribute="trailing" constant="20" symbolic="YES" id="G7B-RI-7um"/>
+                                    <constraint firstItem="VYY-1b-CSc" firstAttribute="leading" secondItem="h9k-mt-6iq" secondAttribute="leading" constant="14" id="Q5k-aR-STZ"/>
+                                    <constraint firstItem="LD6-yX-Q1v" firstAttribute="leading" secondItem="eBh-Nb-KgG" secondAttribute="leading" id="VtU-xi-F0t"/>
+                                    <constraint firstItem="Fxk-ZO-loq" firstAttribute="leading" secondItem="7NE-La-41F" secondAttribute="trailing" constant="20" id="W2N-iT-QmU"/>
+                                    <constraint firstItem="OeO-yb-WDB" firstAttribute="centerY" secondItem="COu-f8-Sw9" secondAttribute="centerY" id="c6T-QX-m6Z"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eBh-Nb-KgG" secondAttribute="trailing" constant="20" symbolic="YES" id="gV7-Fg-I2v"/>
+                                    <constraint firstItem="COu-f8-Sw9" firstAttribute="leading" secondItem="VYY-1b-CSc" secondAttribute="leading" id="geI-uI-rjw"/>
+                                    <constraint firstItem="COu-f8-Sw9" firstAttribute="top" secondItem="VYY-1b-CSc" secondAttribute="bottom" constant="39" id="goL-B0-Tth"/>
+                                    <constraint firstItem="7NE-La-41F" firstAttribute="leading" secondItem="COu-f8-Sw9" secondAttribute="leading" id="mIn-sZ-Vhw"/>
+                                    <constraint firstItem="OeO-yb-WDB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="COu-f8-Sw9" secondAttribute="trailing" constant="8" symbolic="YES" id="qzG-bc-f3D"/>
+                                    <constraint firstItem="eBh-Nb-KgG" firstAttribute="centerY" secondItem="OeO-yb-WDB" secondAttribute="centerY" id="tw6-UU-EBV"/>
+                                    <constraint firstItem="VYY-1b-CSc" firstAttribute="top" secondItem="h9k-mt-6iq" secondAttribute="top" constant="20" id="yTg-el-YWB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Craw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-T0-tKk">
+                                <rect key="frame" x="14" y="260.5" width="82.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ND-PG-dSz">
+                                <rect key="frame" x="14" y="290.5" width="376" height="137.5"/>
+                                <string key="text">It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet. Pursued by the Empire's sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...</string>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-CQ-mfs">
+                                <rect key="frame" x="14" y="453" width="46.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/2/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y54-Kn-BR3">
+                                <rect key="frame" x="14" y="468" width="63" height="16"/>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edited" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3p-X0-NCY">
+                                <rect key="frame" x="99" y="453" width="37.5" height="15"/>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/2/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwy-it-evW">
+                                <rect key="frame" x="99" y="468" width="63" height="16"/>
+                                <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="14"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Qz-vG-Tcj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qIQ-T0-tKk" secondAttribute="trailing" symbolic="YES" id="0lC-si-Po2"/>
+                            <constraint firstItem="q3p-X0-NCY" firstAttribute="leading" secondItem="Kav-CQ-mfs" secondAttribute="trailing" constant="38.5" id="1gr-4o-LVB"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Kav-CQ-mfs" secondAttribute="bottom" constant="40" id="2GY-AW-2XZ"/>
+                            <constraint firstItem="Kav-CQ-mfs" firstAttribute="top" secondItem="5ND-PG-dSz" secondAttribute="bottom" constant="25" id="4E6-c0-qpp"/>
+                            <constraint firstItem="Zwy-it-evW" firstAttribute="leading" secondItem="q3p-X0-NCY" secondAttribute="leading" id="CNu-OB-gFQ"/>
+                            <constraint firstItem="h9k-mt-6iq" firstAttribute="top" secondItem="5Qz-vG-Tcj" secondAttribute="top" id="I4d-Yz-x8B"/>
+                            <constraint firstItem="5ND-PG-dSz" firstAttribute="top" secondItem="qIQ-T0-tKk" secondAttribute="bottom" constant="15" id="Inl-xQ-RUM"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q3p-X0-NCY" secondAttribute="trailing" symbolic="YES" id="JVJ-Ps-OZW"/>
+                            <constraint firstItem="Y54-Kn-BR3" firstAttribute="top" secondItem="Kav-CQ-mfs" secondAttribute="bottom" id="OiW-D9-9k1"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" secondItem="h9k-mt-6iq" secondAttribute="trailing" id="Rfk-3p-tQ7"/>
+                            <constraint firstItem="Zwy-it-evW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Y54-Kn-BR3" secondAttribute="trailing" constant="8" symbolic="YES" id="SQd-fs-Te6"/>
+                            <constraint firstItem="Kav-CQ-mfs" firstAttribute="leading" secondItem="5ND-PG-dSz" secondAttribute="leading" id="ZKi-lF-H0L"/>
+                            <constraint firstItem="q3p-X0-NCY" firstAttribute="centerY" secondItem="Kav-CQ-mfs" secondAttribute="centerY" id="d9B-XH-a0N"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zwy-it-evW" secondAttribute="trailing" symbolic="YES" id="ftm-dg-RHk"/>
+                            <constraint firstItem="h9k-mt-6iq" firstAttribute="leading" secondItem="5Qz-vG-Tcj" secondAttribute="leading" id="gwF-v8-cDx"/>
+                            <constraint firstItem="qIQ-T0-tKk" firstAttribute="top" secondItem="h9k-mt-6iq" secondAttribute="bottom" constant="20" id="hTF-S6-rNh"/>
+                            <constraint firstItem="Zwy-it-evW" firstAttribute="top" secondItem="q3p-X0-NCY" secondAttribute="bottom" id="hlv-Oj-h4M"/>
+                            <constraint firstItem="qIQ-T0-tKk" firstAttribute="leading" secondItem="5Qz-vG-Tcj" secondAttribute="leading" constant="14" id="iUf-wR-Jca"/>
+                            <constraint firstItem="5ND-PG-dSz" firstAttribute="leading" secondItem="qIQ-T0-tKk" secondAttribute="leading" id="r55-W1-cGz"/>
+                            <constraint firstItem="5Qz-vG-Tcj" firstAttribute="trailing" secondItem="5ND-PG-dSz" secondAttribute="trailing" constant="24" id="x8c-q1-g8a"/>
+                            <constraint firstItem="Y54-Kn-BR3" firstAttribute="leading" secondItem="Kav-CQ-mfs" secondAttribute="leading" id="xS3-u3-3lA"/>
+                            <constraint firstItem="h9k-mt-6iq" firstAttribute="height" secondItem="Lba-lV-Glw" secondAttribute="height" multiplier="0.17" id="zlJ-d5-vEp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="A New Hope" id="jOS-zd-40r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Hp-mN-Uaf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="192.85714285714286"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="97c-Pr-WPm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AgV-uN-TiL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgV-mN-eGi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="17"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8lx-um-nMh" kind="relationship" relationship="rootViewController" id="8Yc-Hd-MCu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrt-bo-p3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-133.33333333333334" y="192.85714285714286"/>
         </scene>
@@ -85,11 +263,17 @@
         <namedColor name="BackgroundColor">
             <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="PrimaryColor">
+            <color red="0.97600001096725464" green="0.97600001096725464" blue="0.97600001096725464" alpha="0.93999999761581421" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="SecondaryColor">
             <color red="0.086000002920627594" green="0.086000002920627594" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ThirdColor">
             <color red="0.84700000286102295" green="0.84700000286102295" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
