@@ -34,11 +34,11 @@ struct MovieViewModel {
     }
     
     var created: String {
-        return formatDate(dateToFormat: self.movie.created ?? "", inputFormat: "yyyy-MM-dd'T'HH:mm:ssZ", outputFormat: "yyyy-M-D")
+        return formatDate(dateToFormat: self.movie.created ?? "", inputFormat: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", outputFormat: "yyyy-M-d")
     }
     
     var edited: String {
-        return formatDate(dateToFormat: self.movie.edited ?? "", inputFormat: "yyyy-MM-dd'T'HH:mm:ssZ", outputFormat: "yyyy-M-D")
+        return formatDate(dateToFormat: self.movie.edited ?? "", inputFormat: "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", outputFormat: "yyyy-M-d")
     }
     
     
