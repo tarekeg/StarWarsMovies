@@ -14,7 +14,7 @@ struct CONSTANT {
         static let allMovies = "/films"
     }
     // MARK: Cell
-    struct CELLIdentifier {
+    struct CellIdentifier {
         static let movieCell = "MovieTableViewCell"
     }
     // MARK: Identifier

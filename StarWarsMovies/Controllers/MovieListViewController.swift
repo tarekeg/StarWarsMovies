@@ -25,7 +25,7 @@ class MovieListViewController: UIViewController {
     }
     
     func registerCell() {
-        tableView.register(UINib(nibName: CONSTANT.CELLIdentifier.movieCell, bundle: nil), forCellReuseIdentifier: CONSTANT.CELLIdentifier.movieCell)
+        tableView.register(UINib(nibName: CONSTANT.CellIdentifier.movieCell, bundle: nil), forCellReuseIdentifier: CONSTANT.CellIdentifier.movieCell)
     }
     
     func loadData() {
@@ -55,7 +55,7 @@ extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CONSTANT.CELLIdentifier.movieCell, for: indexPath) as? MovieTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CONSTANT.CellIdentifier.movieCell, for: indexPath) as? MovieTableViewCell else {
             fatalError("TableViewCell not found")
         }
         
