@@ -13,4 +13,8 @@ struct CONSTANT {
         static let baseURL = "https://swapi.dev/api"
         static let allMovies = "/films"
     }
+    // MARK: Cell
+    struct CELLIdentifier {
+        static let movieCell = "MovieTableViewCell"
+    }
 }
