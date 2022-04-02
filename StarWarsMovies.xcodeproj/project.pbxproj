@@ -17,6 +17,27 @@
 		F51418DF27F826B1002F06A1 /* StarWarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418DE27F826B1002F06A1 /* StarWarsAPI.swift */; };
 		F51418E227F8279E002F06A1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418E127F8279E002F06A1 /* Constant.swift */; };
 		F51418E427F82AEA002F06A1 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418E327F82AEA002F06A1 /* MovieListViewController.swift */; };
+		F5B1A4B227F8323700830465 /* Archivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A027F8323600830465 /* Archivo-LightItalic.ttf */; };
+		F5B1A4B327F8323700830465 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A127F8323600830465 /* Archivo-Regular.ttf */; };
+		F5B1A4B427F8323700830465 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A227F8323600830465 /* Archivo-SemiBold.ttf */; };
+		F5B1A4B527F8323700830465 /* Archivo-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A327F8323600830465 /* Archivo-MediumItalic.ttf */; };
+		F5B1A4B627F8323700830465 /* Archivo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A427F8323600830465 /* Archivo-ExtraBold.ttf */; };
+		F5B1A4B727F8323700830465 /* Archivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A527F8323600830465 /* Archivo-Black.ttf */; };
+		F5B1A4B827F8323700830465 /* Archivo-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A627F8323600830465 /* Archivo-ThinItalic.ttf */; };
+		F5B1A4B927F8323700830465 /* Archivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A727F8323600830465 /* Archivo-Light.ttf */; };
+		F5B1A4BA27F8323700830465 /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A827F8323600830465 /* Archivo-Bold.ttf */; };
+		F5B1A4BB27F8323700830465 /* Archivo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A927F8323600830465 /* Archivo-BlackItalic.ttf */; };
+		F5B1A4BC27F8323700830465 /* Archivo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AA27F8323600830465 /* Archivo-Italic.ttf */; };
+		F5B1A4BD27F8323700830465 /* Archivo-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AB27F8323700830465 /* Archivo-ExtraLightItalic.ttf */; };
+		F5B1A4BE27F8323700830465 /* Archivo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AC27F8323700830465 /* Archivo-BoldItalic.ttf */; };
+		F5B1A4BF27F8323700830465 /* Archivo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AD27F8323700830465 /* Archivo-Thin.ttf */; };
+		F5B1A4C027F8323700830465 /* Archivo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AE27F8323700830465 /* Archivo-Medium.ttf */; };
+		F5B1A4C127F8323700830465 /* Archivo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4AF27F8323700830465 /* Archivo-ExtraLight.ttf */; };
+		F5B1A4C227F8323700830465 /* Archivo-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4B027F8323700830465 /* Archivo-SemiBoldItalic.ttf */; };
+		F5B1A4C327F8323700830465 /* Archivo-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4B127F8323700830465 /* Archivo-ExtraBoldItalic.ttf */; };
+		F5B1A4C627F8358E00830465 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B1A4C427F8358E00830465 /* MovieTableViewCell.swift */; };
+		F5B1A4C727F8358E00830465 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4C527F8358E00830465 /* MovieTableViewCell.xib */; };
+		F5BA8AAF27F8477C002387FB /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +53,27 @@
 		F51418DE27F826B1002F06A1 /* StarWarsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPI.swift; sourceTree = "<group>"; };
 		F51418E127F8279E002F06A1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F51418E327F82AEA002F06A1 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		F5B1A4A027F8323600830465 /* Archivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-LightItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4A127F8323600830465 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Regular.ttf"; sourceTree = "<group>"; };
+		F5B1A4A227F8323600830465 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
+		F5B1A4A327F8323600830465 /* Archivo-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4A427F8323600830465 /* Archivo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F5B1A4A527F8323600830465 /* Archivo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Black.ttf"; sourceTree = "<group>"; };
+		F5B1A4A627F8323600830465 /* Archivo-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4A727F8323600830465 /* Archivo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Light.ttf"; sourceTree = "<group>"; };
+		F5B1A4A827F8323600830465 /* Archivo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Bold.ttf"; sourceTree = "<group>"; };
+		F5B1A4A927F8323600830465 /* Archivo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4AA27F8323600830465 /* Archivo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Italic.ttf"; sourceTree = "<group>"; };
+		F5B1A4AB27F8323700830465 /* Archivo-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4AC27F8323700830465 /* Archivo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4AD27F8323700830465 /* Archivo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Thin.ttf"; sourceTree = "<group>"; };
+		F5B1A4AE27F8323700830465 /* Archivo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Medium.ttf"; sourceTree = "<group>"; };
+		F5B1A4AF27F8323700830465 /* Archivo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F5B1A4B027F8323700830465 /* Archivo-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4B127F8323700830465 /* Archivo-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F5B1A4C427F8358E00830465 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		F5B1A4C527F8358E00830465 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +108,14 @@
 			children = (
 				F51418C327F81DAC002F06A1 /* AppDelegate.swift */,
 				F51418C527F81DAC002F06A1 /* SceneDelegate.swift */,
-				F51418C927F81DAC002F06A1 /* Main.storyboard */,
-				F51418CC27F81DAD002F06A1 /* Assets.xcassets */,
-				F51418CE27F81DAD002F06A1 /* LaunchScreen.storyboard */,
 				F51418D127F81DAD002F06A1 /* Info.plist */,
-				F51418DB27F82040002F06A1 /* Models */,
+				F5BA8AAD27F841A2002387FB /* Ressources */,
+				F5BA8AAC27F8416D002387FB /* Cells */,
+				F5BA8AAB27F84162002387FB /* Views */,
 				F51418E027F826B6002F06A1 /* Service */,
-				F51418E127F8279E002F06A1 /* Constant.swift */,
+				F51418DB27F82040002F06A1 /* Models */,
 				F51418E527F82AF0002F06A1 /* Controllers */,
+				F5BA8AB027F84781002387FB /* Utils */,
 			);
 			path = StarWarsMovies;
 			sourceTree = "<group>";
@@ -101,6 +143,67 @@
 				F51418E327F82AEA002F06A1 /* MovieListViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5B1A49F27F8322B00830465 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1A4A527F8323600830465 /* Archivo-Black.ttf */,
+				F5B1A4A927F8323600830465 /* Archivo-BlackItalic.ttf */,
+				F5B1A4A827F8323600830465 /* Archivo-Bold.ttf */,
+				F5B1A4AC27F8323700830465 /* Archivo-BoldItalic.ttf */,
+				F5B1A4A427F8323600830465 /* Archivo-ExtraBold.ttf */,
+				F5B1A4B127F8323700830465 /* Archivo-ExtraBoldItalic.ttf */,
+				F5B1A4AF27F8323700830465 /* Archivo-ExtraLight.ttf */,
+				F5B1A4AB27F8323700830465 /* Archivo-ExtraLightItalic.ttf */,
+				F5B1A4AA27F8323600830465 /* Archivo-Italic.ttf */,
+				F5B1A4A727F8323600830465 /* Archivo-Light.ttf */,
+				F5B1A4A027F8323600830465 /* Archivo-LightItalic.ttf */,
+				F5B1A4AE27F8323700830465 /* Archivo-Medium.ttf */,
+				F5B1A4A327F8323600830465 /* Archivo-MediumItalic.ttf */,
+				F5B1A4A127F8323600830465 /* Archivo-Regular.ttf */,
+				F5B1A4A227F8323600830465 /* Archivo-SemiBold.ttf */,
+				F5B1A4B027F8323700830465 /* Archivo-SemiBoldItalic.ttf */,
+				F5B1A4AD27F8323700830465 /* Archivo-Thin.ttf */,
+				F5B1A4A627F8323600830465 /* Archivo-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F5BA8AAB27F84162002387FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F51418CE27F81DAD002F06A1 /* LaunchScreen.storyboard */,
+				F51418C927F81DAC002F06A1 /* Main.storyboard */,
+				F5B1A4C527F8358E00830465 /* MovieTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5BA8AAC27F8416D002387FB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5B1A4C427F8358E00830465 /* MovieTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F5BA8AAD27F841A2002387FB /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F51418CC27F81DAD002F06A1 /* Assets.xcassets */,
+				F5B1A49F27F8322B00830465 /* fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F5BA8AB027F84781002387FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F51418E127F8279E002F06A1 /* Constant.swift */,
+				F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +264,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B1A4C227F8323700830465 /* Archivo-SemiBoldItalic.ttf in Resources */,
+				F5B1A4B827F8323700830465 /* Archivo-ThinItalic.ttf in Resources */,
+				F5B1A4B427F8323700830465 /* Archivo-SemiBold.ttf in Resources */,
+				F5B1A4BE27F8323700830465 /* Archivo-BoldItalic.ttf in Resources */,
+				F5B1A4C727F8358E00830465 /* MovieTableViewCell.xib in Resources */,
+				F5B1A4B727F8323700830465 /* Archivo-Black.ttf in Resources */,
+				F5B1A4BD27F8323700830465 /* Archivo-ExtraLightItalic.ttf in Resources */,
+				F5B1A4B927F8323700830465 /* Archivo-Light.ttf in Resources */,
+				F5B1A4C027F8323700830465 /* Archivo-Medium.ttf in Resources */,
+				F5B1A4BF27F8323700830465 /* Archivo-Thin.ttf in Resources */,
 				F51418D027F81DAD002F06A1 /* LaunchScreen.storyboard in Resources */,
+				F5B1A4C127F8323700830465 /* Archivo-ExtraLight.ttf in Resources */,
 				F51418CD27F81DAD002F06A1 /* Assets.xcassets in Resources */,
+				F5B1A4BA27F8323700830465 /* Archivo-Bold.ttf in Resources */,
+				F5B1A4B227F8323700830465 /* Archivo-LightItalic.ttf in Resources */,
+				F5B1A4B327F8323700830465 /* Archivo-Regular.ttf in Resources */,
+				F5B1A4B527F8323700830465 /* Archivo-MediumItalic.ttf in Resources */,
 				F51418CB27F81DAC002F06A1 /* Main.storyboard in Resources */,
+				F5B1A4BC27F8323700830465 /* Archivo-Italic.ttf in Resources */,
+				F5B1A4C327F8323700830465 /* Archivo-ExtraBoldItalic.ttf in Resources */,
+				F5B1A4BB27F8323700830465 /* Archivo-BlackItalic.ttf in Resources */,
+				F5B1A4B627F8323700830465 /* Archivo-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +302,9 @@
 				F51418C627F81DAC002F06A1 /* SceneDelegate.swift in Sources */,
 				F51418E427F82AEA002F06A1 /* MovieListViewController.swift in Sources */,
 				F51418DA27F8203B002F06A1 /* Movie.swift in Sources */,
+				F5B1A4C627F8358E00830465 /* MovieTableViewCell.swift in Sources */,
 				F51418E227F8279E002F06A1 /* Constant.swift in Sources */,
+				F5BA8AAF27F8477C002387FB /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
