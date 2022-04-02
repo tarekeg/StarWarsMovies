@@ -13,6 +13,9 @@ class MovieListViewController: UIViewController {
     @IBOutlet weak var totalMoviesLabel: UILabel!
     @IBOutlet weak var topView: UIView!
     
+    
+    private var movieListVM: MovieListViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
@@ -27,8 +30,12 @@ class MovieListViewController: UIViewController {
     
     func loadData() {
         StarWarsAPI().getAllMovies { movieData in
+            if let movies = movieData?.results {
+                self.movieListVM = MovieListViewModel(movies)
+            }
             DispatchQueue.main.async {
-                self.totalMoviesLabel.text = "Total \(String(describing: movieData!.count)) moviesss"
+                self.totalMoviesLabel.text = "Total \(movieData?.count ?? 0) Movies"
+                self.tableView.reloadData()
             }
             
         }
@@ -38,14 +45,30 @@ class MovieListViewController: UIViewController {
 
 extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.movieListVM == nil ? 0 : self.movieListVM.numberOfSection
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return movieListVM.numberOfRowsInSection(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CONSTANT.CELLIdentifier.movieCell, for: indexPath) as! MovieTableViewCell
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CONSTANT.CELLIdentifier.movieCell, for: indexPath) as? MovieTableViewCell else {
+            fatalError("TableViewCell not found")
+        }
+        
+        let movieVM = self.movieListVM.movieAtIndex(index: indexPath.row)
+        
+        cell.movieTitleLabel.text = movieVM.title
+        cell.directorLabel.text = movieVM.director
+        cell.producerLabel.text = movieVM.producer
+        cell.releaseDateLabel.text = movieVM.releaseDate
+        cell.openingCrawlLabel.text = movieVM.openingCrawl
         
         return cell
+        
     }
     
     
