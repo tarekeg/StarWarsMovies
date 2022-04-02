@@ -25,13 +25,13 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qH-yv-PDL">
                         <rect key="frame" x="0.0" y="0.0" width="427" height="140"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A New Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeT-yV-N5m">
-                                <rect key="frame" x="9" y="23" width="133" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="A New Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeT-yV-N5m">
+                                <rect key="frame" x="9" y="23" width="330" height="27"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="24"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn5-95-QSZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn5-95-QSZ">
                                 <rect key="frame" x="349" y="18" width="54" height="10"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="9"/>
                                 <color key="textColor" name="PrimaryColor"/>
@@ -51,12 +51,15 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Georges Lucas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbx-pB-aLI">
                                 <rect key="frame" x="12" y="65" width="88" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="scA-47-BBA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnb-GE-w3H">
-                                <rect key="frame" x="151" y="55" width="37" height="10"/>
+                                <rect key="frame" x="116" y="55" width="37" height="10"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="9"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,8 +70,8 @@
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gary Kurtz, Rick McCallum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-C9-Pz6">
-                                <rect key="frame" x="151" y="65" width="155" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Gary Kurtz, Rick McCallum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-C9-Pz6">
+                                <rect key="frame" x="116" y="65" width="154.5" height="15"/>
                                 <fontDescription key="fontDescription" name="Archivo-Regular" family="Archivo" pointSize="13"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
@@ -83,11 +86,14 @@
                             <constraint firstItem="Zbx-pB-aLI" firstAttribute="leading" secondItem="yS5-lO-rJH" secondAttribute="leading" id="RYa-OX-boa"/>
                             <constraint firstItem="rn5-95-QSZ" firstAttribute="centerY" secondItem="FeT-yV-N5m" secondAttribute="top" id="SCN-Rs-p3M"/>
                             <constraint firstItem="yS5-lO-rJH" firstAttribute="leading" secondItem="2qH-yv-PDL" secondAttribute="leading" constant="12" id="UCI-u7-IwM"/>
-                            <constraint firstItem="pnb-GE-w3H" firstAttribute="leading" secondItem="Zbx-pB-aLI" secondAttribute="trailing" constant="51" id="Yol-1E-r5V"/>
                             <constraint firstItem="FeT-yV-N5m" firstAttribute="leading" secondItem="2qH-yv-PDL" secondAttribute="leading" constant="9" id="ZyR-pQ-b1p"/>
+                            <constraint firstItem="D2C-sk-8Jn" firstAttribute="leading" secondItem="2qH-yv-PDL" secondAttribute="leading" constant="12" id="a2B-qe-zVj"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="75H-C9-Pz6" secondAttribute="trailing" constant="16" id="bGf-a9-Fv4"/>
                             <constraint firstAttribute="trailing" secondItem="rn5-95-QSZ" secondAttribute="trailing" constant="24" id="eaP-ff-gvj"/>
+                            <constraint firstItem="p8r-4u-Caw" firstAttribute="leading" secondItem="FeT-yV-N5m" secondAttribute="trailing" constant="10" id="h4c-ix-xZI"/>
                             <constraint firstItem="75H-C9-Pz6" firstAttribute="leading" secondItem="pnb-GE-w3H" secondAttribute="leading" id="js7-Fr-jXl"/>
                             <constraint firstItem="FeT-yV-N5m" firstAttribute="top" secondItem="2qH-yv-PDL" secondAttribute="top" constant="23" id="pqA-uo-DD6"/>
+                            <constraint firstItem="75H-C9-Pz6" firstAttribute="leading" secondItem="Zbx-pB-aLI" secondAttribute="trailing" constant="16" id="rvg-ao-XIm"/>
                             <constraint firstItem="Zbx-pB-aLI" firstAttribute="top" secondItem="yS5-lO-rJH" secondAttribute="bottom" id="tO4-ia-gHv"/>
                             <constraint firstItem="pnb-GE-w3H" firstAttribute="centerY" secondItem="yS5-lO-rJH" secondAttribute="centerY" id="u4k-dN-Ube"/>
                             <constraint firstItem="D2C-sk-8Jn" firstAttribute="top" secondItem="Zbx-pB-aLI" secondAttribute="bottom" constant="7" id="uYc-s6-6LH"/>
