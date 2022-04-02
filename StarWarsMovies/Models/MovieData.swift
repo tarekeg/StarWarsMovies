@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct MovieData {
+struct MovieData: Decodable {
     
     var count: Int?
     var results: [Movie]?
+    
+    enum CodingKeys: String, CodingKey {
+        case count
+        case results
+    }
     
 }

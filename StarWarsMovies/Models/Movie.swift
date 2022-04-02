@@ -7,14 +7,24 @@
 
 import Foundation
 
-struct Movie {
-    
+struct Movie: Decodable {
     var title: String?
     var director: String?
-    var release_date: String?
     var producer: String?
-    var opening_crawl: String?
+    var releaseDate: String?
+    var openingCrawl: String?
     var created: String?
     var edited: String?
     
+    enum CodingKeys: String, CodingKey {
+        case title
+        case director
+        case producer
+        case releaseDate = "release_date"
+        case openingCrawl = "opening_crawl"
+        case created
+        case edited
+    }
 }
+
+
