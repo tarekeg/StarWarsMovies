@@ -13,6 +13,7 @@
 		F51418CD27F81DAD002F06A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51418CC27F81DAD002F06A1 /* Assets.xcassets */; };
 		F51418D027F81DAD002F06A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51418CE27F81DAD002F06A1 /* LaunchScreen.storyboard */; };
 		F51418DA27F8203B002F06A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418D927F8203B002F06A1 /* Movie.swift */; };
+		F51418DD27F82426002F06A1 /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418DC27F82426002F06A1 /* MovieData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F51418CF27F81DAD002F06A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51418D127F81DAD002F06A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51418D927F8203B002F06A1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F51418DC27F82426002F06A1 /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F51418D927F8203B002F06A1 /* Movie.swift */,
+				F51418DC27F82426002F06A1 /* MovieData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51418DD27F82426002F06A1 /* MovieData.swift in Sources */,
 				F51418C427F81DAC002F06A1 /* AppDelegate.swift in Sources */,
 				F51418C627F81DAC002F06A1 /* SceneDelegate.swift in Sources */,
 				F51418DA27F8203B002F06A1 /* Movie.swift in Sources */,
