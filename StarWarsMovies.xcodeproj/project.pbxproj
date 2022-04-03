@@ -42,6 +42,7 @@
 		F5BA8AB327F85025002387FB /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB227F85025002387FB /* MovieViewModel.swift */; };
 		F5BA8AB527F85706002387FB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB427F85706002387FB /* MovieListViewModel.swift */; };
 		F5BA8AB727F86CD3002387FB /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA8AB627F86CD3002387FB /* MovieDetailViewController.swift */; };
+		F5D7CE0B27FA543D001B22DA /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7CE0A27FA543D001B22DA /* Extension+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		F5BA8AB227F85025002387FB /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		F5BA8AB427F85706002387FB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		F5BA8AB627F86CD3002387FB /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		F5D7CE0A27FA543D001B22DA /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,6 @@
 				97D5F88F070DD9AD3A4723D5 /* Pods-StarWarsMovies.debug.xcconfig */,
 				F423DEB1D84C2F43086110D3 /* Pods-StarWarsMovies.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +236,7 @@
 			children = (
 				F51418E127F8279E002F06A1 /* Constant.swift */,
 				F5BA8AAE27F8477C002387FB /* Extension+UIView.swift */,
+				F5D7CE0A27FA543D001B22DA /* Extension+UITableView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -382,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D7CE0B27FA543D001B22DA /* Extension+UITableView.swift in Sources */,
 				F51418DF27F826B1002F06A1 /* StarWarsAPI.swift in Sources */,
 				F5BA8AB327F85025002387FB /* MovieViewModel.swift in Sources */,
 				F51418DD27F82426002F06A1 /* MovieData.swift in Sources */,

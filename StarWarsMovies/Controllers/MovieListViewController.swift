@@ -20,7 +20,6 @@ class MovieListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSpinner()
         registerCell()
         topView.setShadow()
     }
@@ -41,6 +40,7 @@ class MovieListViewController: UIViewController {
     }
     
     func loadData() {
+        setupSpinner()
         StarWarsAPI().getAllMovies { movieData in
             if let movies = movieData?.results {
                 self.movieListVM = MovieListViewModel(movies)
@@ -70,7 +70,10 @@ class MovieListViewController: UIViewController {
       case .cellular:
           loadData()
       case .unavailable:
-        print("Network not reachable")
+          self.movieListVM = nil
+          self.tableView.reloadData()
+          self.tableView.setEmptyMessage("no internet connexion")
+          
       case .none:
           print("")
       }
