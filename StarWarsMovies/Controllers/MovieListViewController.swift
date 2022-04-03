@@ -15,13 +15,14 @@ class MovieListViewController: UIViewController {
     
     
     private var movieListVM: MovieListViewModel!
+    let spinner = UIActivityIndicatorView(style: .medium)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSpinner()
         registerCell()
         loadData()
         topView.setShadow()
-        
     }
     
     func registerCell() {
@@ -36,9 +37,16 @@ class MovieListViewController: UIViewController {
             DispatchQueue.main.async {
                 self.totalMoviesLabel.text = "Total \(movieData?.count ?? 0) Movies"
                 self.tableView.reloadData()
+                self.spinner.stopAnimating()
+                self.spinner.isHidden = true
             }
             
         }
+    }
+    
+    func setupSpinner() {
+        spinner.startAnimating()
+        tableView.backgroundView = spinner
     }
     
 }
