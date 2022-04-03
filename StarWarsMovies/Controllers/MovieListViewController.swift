@@ -6,13 +6,14 @@
 //
 
 import UIKit
-
+import Reachability
 class MovieListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var totalMoviesLabel: UILabel!
     @IBOutlet weak var topView: UIView!
     
+    let reachability = try! Reachability()
     
     private var movieListVM: MovieListViewModel!
     let spinner = UIActivityIndicatorView(style: .medium)
@@ -21,8 +22,18 @@ class MovieListViewController: UIViewController {
         super.viewDidLoad()
         setupSpinner()
         registerCell()
-        loadData()
         topView.setShadow()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+       do{
+         try reachability.startNotifier()
+       }catch{
+         print("could not start reachability notifier")
+       }
+        
     }
     
     func registerCell() {
@@ -47,6 +58,22 @@ class MovieListViewController: UIViewController {
     func setupSpinner() {
         spinner.startAnimating()
         tableView.backgroundView = spinner
+    }
+    
+    @objc func reachabilityChanged(note: Notification) {
+
+      let reachability = note.object as! Reachability
+
+      switch reachability.connection {
+      case .wifi:
+          loadData()
+      case .cellular:
+          loadData()
+      case .unavailable:
+        print("Network not reachable")
+      case .none:
+          print("")
+      }
     }
     
 }
