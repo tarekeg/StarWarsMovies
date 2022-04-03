@@ -60,6 +60,13 @@ class MovieListViewController: UIViewController {
         tableView.backgroundView = spinner
     }
     
+    func resetTableView() {
+        self.totalMoviesLabel.text = "Total 0 Movie"
+        self.movieListVM = nil
+        self.tableView.reloadData()
+        self.tableView.setEmptyMessage("no internet connexion")
+    }
+    
     @objc func reachabilityChanged(note: Notification) {
 
       let reachability = note.object as! Reachability
@@ -70,10 +77,7 @@ class MovieListViewController: UIViewController {
       case .cellular:
           loadData()
       case .unavailable:
-          self.movieListVM = nil
-          self.tableView.reloadData()
-          self.tableView.setEmptyMessage("no internet connexion")
-          
+          resetTableView()
       case .none:
           print("")
       }

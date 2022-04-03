@@ -18,6 +18,7 @@
 		F51418DF27F826B1002F06A1 /* StarWarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418DE27F826B1002F06A1 /* StarWarsAPI.swift */; };
 		F51418E227F8279E002F06A1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418E127F8279E002F06A1 /* Constant.swift */; };
 		F51418E427F82AEA002F06A1 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51418E327F82AEA002F06A1 /* MovieListViewController.swift */; };
+		F52EFD1927FA5D70004996A1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F52EFD1827FA5D70004996A1 /* README.md */; };
 		F5B1A4B227F8323700830465 /* Archivo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A027F8323600830465 /* Archivo-LightItalic.ttf */; };
 		F5B1A4B327F8323700830465 /* Archivo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A127F8323600830465 /* Archivo-Regular.ttf */; };
 		F5B1A4B427F8323700830465 /* Archivo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B1A4A227F8323600830465 /* Archivo-SemiBold.ttf */; };
@@ -61,6 +62,7 @@
 		F51418DE27F826B1002F06A1 /* StarWarsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPI.swift; sourceTree = "<group>"; };
 		F51418E127F8279E002F06A1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F51418E327F82AEA002F06A1 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		F52EFD1827FA5D70004996A1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5B1A4A027F8323600830465 /* Archivo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-LightItalic.ttf"; sourceTree = "<group>"; };
 		F5B1A4A127F8323600830465 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-Regular.ttf"; sourceTree = "<group>"; };
 		F5B1A4A227F8323600830465 /* Archivo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Archivo-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		F51418B727F81DAC002F06A1 = {
 			isa = PBXGroup;
 			children = (
+				F52EFD1827FA5D70004996A1 /* README.md */,
 				F51418C227F81DAC002F06A1 /* StarWarsMovies */,
 				F51418C127F81DAC002F06A1 /* Products */,
 				D57DD33F9807E96A6686CE34 /* Pods */,
@@ -261,7 +264,7 @@
 				F51418BC27F81DAC002F06A1 /* Sources */,
 				F51418BD27F81DAC002F06A1 /* Frameworks */,
 				F51418BE27F81DAC002F06A1 /* Resources */,
-				CA2E262210E272B7BAC4E3E4 /* [CP] Embed Pods Frameworks */,
+				1223AD5283F67522CB561B84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +321,7 @@
 				F5B1A4B727F8323700830465 /* Archivo-Black.ttf in Resources */,
 				F5B1A4BD27F8323700830465 /* Archivo-ExtraLightItalic.ttf in Resources */,
 				F5B1A4B927F8323700830465 /* Archivo-Light.ttf in Resources */,
+				F52EFD1927FA5D70004996A1 /* README.md in Resources */,
 				F5B1A4C027F8323700830465 /* Archivo-Medium.ttf in Resources */,
 				F5B1A4BF27F8323700830465 /* Archivo-Thin.ttf in Resources */,
 				F51418D027F81DAD002F06A1 /* LaunchScreen.storyboard in Resources */,
@@ -338,6 +342,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1223AD5283F67522CB561B84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		96296201B7C8C21D063D854E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,23 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA2E262210E272B7BAC4E3E4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsMovies/Pods-StarWarsMovies-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
