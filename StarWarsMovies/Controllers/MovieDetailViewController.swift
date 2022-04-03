@@ -25,7 +25,7 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
         setDesign()
         if let movieVM = movieVM {
-                self.setupData(movie: movieVM)
+            self.setupData(movie: movieVM)
         }
         
 

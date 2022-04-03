@@ -20,14 +20,14 @@
                                 <rect key="frame" x="122" y="368" width="170" height="170"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thinkit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="03c-FA-npG">
-                                <rect key="frame" x="134.5" y="815" width="145" height="40"/>
+                                <rect key="frame" x="134.5" y="787" width="145" height="40"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zIJ-Sn-ebB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="01V-7f-nYU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="03c-FA-npG" secondAttribute="bottom" constant="7" id="Pat-Eb-Vq6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="03c-FA-npG" secondAttribute="bottom" constant="35" id="Pat-Eb-Vq6"/>
                             <constraint firstItem="03c-FA-npG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eaE-K5-5Hg"/>
                             <constraint firstItem="zIJ-Sn-ebB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pxV-Ko-mcx"/>
                         </constraints>
